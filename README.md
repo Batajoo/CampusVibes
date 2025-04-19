@@ -1,12 +1,22 @@
-# React + Vite
+/src
+  ├── assets/              # Static images, icons, logos
+  ├── components/          # Reusable UI components (Buttons, Cards, Modals)
+  ├── features/            # Feature-based structure (Redux slices + logic)
+  │   ├── auth/            # Login, Register, ForgotPassword, etc.
+  │   ├── posts/           # Post feed, create post, like/comment UI
+  │   ├── notes/           # Note sharing UI + logic
+  │   ├── groups/          # Groups and chat features
+  │   ├── explore/         # Trending and search logic
+  │   └── profile/         # Profile view and settings
+  ├── layouts/             # Page layouts like Sidebar + Topbar
+  ├── pages/               # Pages for routing (Home, Login, etc.)
+  ├── redux/               # Centralized Redux store & slices
+  ├── services/            # API calls (axios or fetch logic)
+  ├── utils/               # Helper functions, constants
+  ├── App.jsx              # Your main app with routes
+  └── main.jsx             # App entry point (ReactDOM.render)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+What am I planning to learn from this project:
+- using git and github effectively
+- implementing backend logic
