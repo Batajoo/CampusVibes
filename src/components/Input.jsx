@@ -4,6 +4,7 @@ const Input = forwardRef(function Input({
   emoji="",
   label="",
   type="text",
+  placeholder="",
   className="",
   ...props
 }, ref) {
@@ -21,7 +22,8 @@ const Input = forwardRef(function Input({
         type={type}
         ref={ref}
         id={id}
-        className={`px-3 py-2 rounded-2xl text-black outline-none border-gray-400 border-[2px] w-full focus:border-white duration-200 ${className}`}
+        placeholder={placeholder}
+        className={`px-3 py-2 rounded-2xl text-black outline-none border-gray-400 border-[2px] w-full focus:border-purple-600 duration-200 ${className}`}
         {...props}
       />
     </div>

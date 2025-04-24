@@ -12,25 +12,33 @@ function Login() {
 	}
 
 	return (
-		<div className='bg-gray-100 w-full h-screen p-6'>
+		<div className='bg-gray-200 w-full h-screen p-6'>
             
-            <section className='grid grid-cols-2 h-full w-full rounded-3xl bg-white'>
-                <div>
-                    <img src={loginPic} className='object-cover h-full rounded-l-3xl'/>
+            <section className='flex h-full w-full rounded-3xl bg-white shadow-purple-600/50 shadow-lg'>
+                <div className='h-full'>
+                    <img src={loginPic} className='box-border object-cover h-full rounded-l-3xl'/>
                 </div>
-                <div>
-                    <div className='text-right'>Not a member? Join now.</div>
-                    <div className='w-full p-25 flex flex-col gap-3'>
-                        <div className='text-center'>
-                            <h1>Let's Continue Our Journey!</h1>
-                            <p>Welcome Back</p>
+                <div className='h-full'>
+                    <div className='p-4'>
+                        <div className='text-right relative right-6 top-5'>Not a member? Join now.</div>
+                        
+                        <div className='w-full p-15 flex flex-col gap-3'>
+                        <div className='mx-auto block'>
+                        <Logo/>
                         </div>
-                        <Input/>
-                        <Input/>
-                        <div>
-                            <p className='text-right'>Recover Password</p>
+                            <div className='text-center'>
+                                <h1 className='text-2xl font-semibold'>Let's Continue Our Journey!</h1>
+                                <p className='text-md'>Welcome Back</p>
+                            </div>
+                            <Input placeholder="Email" type="email"/>
+                            <Input placeholder="Password" type="password"/>
+                            <div>
+                                <p className='text-right'>Recover Password</p>
+                            </div>
+                            <Button bgColor='bg-purple-600' className='hover:bg-purple-500 hover:cursor-pointer'>Sign In</Button>
                         </div>
-                        <Button>Sign In</Button>
+                        
+
                     </div>
                     
                 </div>
