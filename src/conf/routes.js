@@ -1,4 +1,4 @@
-import { LoginPage, Home } from "../pages";
+import { LoginPage, Home, RegisterPage } from "../pages";
 
 export const routes = [
     {
@@ -6,11 +6,15 @@ export const routes = [
         children: [
             {
                 index: true,
-                Component: Home
+                Component: Home,
             },
             {
                 path:"login",
-                Component: LoginPage
+                Component: LoginPage,
+            },
+            {
+                path:"register",
+                Component: RegisterPage,
             }
         ]
     }

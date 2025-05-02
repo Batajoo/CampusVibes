@@ -18,24 +18,26 @@ function Login() {
                 <div className='h-full'>
                     <img src={loginPic} className='box-border object-cover h-full rounded-l-3xl'/>
                 </div>
-                <div className='h-full'>
-                    <div className='p-4'>
-                        <div className='text-right relative right-6 top-5'>Not a member? Join now.</div>
+                <div className='h-full w-1/2'>
+                <div className='text-right pr-4 pt-4'>Not a member? Join now.</div>
+                    <div className='p-4 flex justity-center items-center h-full'>
                         
-                        <div className='w-full p-15 flex flex-col gap-3'>
-                        <div className='mx-auto block'>
-                        <Logo/>
-                        </div>
+                        <div className='w-full px-15 flex flex-col gap-3'>
+                            <div className='mx-auto block'>
+                            <Logo/>
+                            </div>
                             <div className='text-center'>
                                 <h1 className='text-2xl font-semibold'>Let's Continue Our Journey!</h1>
                                 <p className='text-md'>Welcome Back</p>
                             </div>
-                            <Input placeholder="Email" type="email"/>
-                            <Input placeholder="Password" type="password"/>
-                            <div>
-                                <p className='text-right'>Recover Password</p>
-                            </div>
-                            <Button bgColor='bg-purple-600' className='hover:bg-purple-500 hover:cursor-pointer'>Sign In</Button>
+                            <form className='flex flex-col gap-2'>
+                                <Input placeholder="Email" type="email"/>
+                                <Input placeholder="Password" type="password"/>
+                                <div>
+                                    <p className='text-right'>Recover Password</p>
+                                </div>
+                                <Button bgColor='bg-purple-600' className='hover:bg-purple-500 hover:cursor-pointer'>Sign In</Button>
+                            </form>
                         </div>
                         
 
