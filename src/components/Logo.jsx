@@ -1,6 +1,7 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faGraduationCap} from "@fortawesome/free-solid-svg-icons"
+import { Link } from 'react-router'
 
 function Logo({
     className="",
@@ -9,12 +10,14 @@ function Logo({
 
 }) {
   return (
-    <div className={`flex gap-1 px-3 py-2 items-center ${className}`}>
-            <FontAwesomeIcon icon={faGraduationCap} className={`text-purple-800 text-4xl ${fontClass}`}/>
-            {headTitle && <h1 className='font-poppins font-bold text-3xl text-purple-800' >
+    <Link className={`flex gap-1 px-3 py-2 items-center ${className}`}
+      to="/"
+    >
+            <FontAwesomeIcon icon={faGraduationCap} className={`text-purple-800 text-4xl `}/>
+            {headTitle && <h1 className={` font-poppins text-3xl font-bold text-purple-800 ${fontClass}`} >
                 {headTitle}</h1>}
         
-    </div>
+    </Link>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
-import { Input, Button, Logo} from "../"
+import { Input, Button, Logo} from ".."
 import loginPic from "../../assets/loginBackground.png"
 
 function Login() {
