@@ -1,13 +1,13 @@
 import React,{forwardRef, useId} from 'react'
 
-const Input = forwardRef(function Input({
+const Input = function Input({
   emoji="",
   label="",
   type="text",
   placeholder="",
   className="",
-  ...props
-}, ref) {
+  ref=null,
+  ...props}) {
   const id = useId;
   return (
     <div className='w-full'>
@@ -28,6 +28,6 @@ const Input = forwardRef(function Input({
       />
     </div>
   )
-});
+};
 
 export default Input

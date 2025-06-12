@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMessage } from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router"
 
-function TopBar() {
-  const [universityName, changeUniversityName] = useState("University Of SomeWhere");
+function TopBar({
+  universityName = "University Of Somewhere"
+}) {
   return (
     <header className="flex justify-between text-2xl p-2 items-center border-b-2 border-[#DAD2FF]">
         <Logo fontClass='text-xl' headTitle=''/>
