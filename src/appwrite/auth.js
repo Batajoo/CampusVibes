@@ -7,14 +7,15 @@ export class Auth{
 
     constructor(){
         this.client = this.client.setProject(conf.appwriteProjectID);
-        this.account = new Account(client);
+        this.account = new Account(this.client);
     };
 
-    async createAccount({email, password, name}){
+    async createAccount(email, password, name){
         try{
             const userAccount = await this.account.create(ID.unique(), email, password, name)
             if(userAccount){
                 // call login function 
+                return this.login(email, password);
             } else {
                 return userAccount;
             }
@@ -23,7 +24,7 @@ export class Auth{
         }
     }
 
-    async login({email, password}){
+    async login(email, password){
         try{
             const loginSession = this.account.createEmailPasswordSession(email, password);
             return loginSession;

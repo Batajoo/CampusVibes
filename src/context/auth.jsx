@@ -16,7 +16,10 @@ function AuthProvider({children, ...props}){
     );
 }
 
-const useAuth = useContext(AuthContext);
+function useAuth(){
+    const useAuth = useContext(AuthContext);
+    return useAuth;
+}
 
 export {
     AuthProvider,
